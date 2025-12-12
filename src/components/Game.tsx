@@ -5,7 +5,7 @@ export default function Game() {
     const [squares, setSquares] = useState<(string | null)[]>(
         Array(9).fill(null)
     );
-    const [isXNext, setIsNext] = useState(true);
+    const [isXNext, setIsXNext] = useState(true);
 
     function handleSquareClick(index: number) {
         // Temporary: no gameplay logic yet
